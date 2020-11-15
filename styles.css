@@ -1,0 +1,196 @@
+/** @format */
+body {
+  margin: 0;
+  background-color: rgba(250, 248, 248, 0.863);
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+nav {
+  background-color: rgba(245, 245, 245, 0.432);
+  box-shadow: 6px 12px 29px -20px rgba(255, 1, 1, 0.829);
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(14, 3, 3);
+}
+
+nav a:hover {
+  background-color: rgba(224, 184, 184, 0.685);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-left: 2px solid rgb(255, 0, 0);
+  border-right: 2px solid rgb(255, 0, 0);
+  transition-duration: 0.5s;
+  margin: 5px auto;
+}
+
+.navSection {
+  display: flex;
+  padding-right: 5rem;
+}
+
+/* Logo */
+
+.navLogo li a:hover {
+  background-color: rgba(245, 245, 245, 0.432);
+
+  margin: none;
+  color: inherit;
+}
+
+/* Main Container */
+#contaniner {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.datOfBirthContainer{
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+
+}
+
+.datOfBirthContainer > h1{
+  color: rgb(255, 0, 0);
+  box-shadow: 6px 12px 29px -20px rgba(255, 1, 1, 0.925);
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 9px;
+}
+.datOfBirthContainer > h3{
+  text-transform: capitalize;
+  color: rgb(255, 0, 0);
+  box-shadow: 6px 12px 29px -20px rgba(29, 27, 27, 0.925);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 9px;
+  margin: 0 .5rem .7rem;
+}
+.datOfBirthContainer > h3 span{
+  color: rgb(0, 0, 255);
+  box-shadow: 6px 12px 29px -20px rgba(29, 27, 27, 0.925);
+  font-size: 1rem;
+  padding: .5rem;
+  border-radius: 9px;
+}
+.datOfBirthContainer > input {
+  margin: .5rem;
+  padding: .4rem;
+  outline-color: red;
+  
+}
+
+.datOfBirthContainer > button {
+  font-size: 1.6rem;
+  font-weight: 200;
+  background-color: rgba(255, 0, 0, 0.89);
+  color: rgba(255, 255, 255, 0.808);
+  outline: none;
+  border-radius: 9px;
+
+  padding: .3rem;
+  text-transform: uppercase;
+  position: absolute;
+
+  bottom: -50px;
+  
+}
+
+.root{
+  margin: 0 1rem;
+}
+
+.root > h2{
+   color: rgba(128, 128, 128, 0.671);
+ 
+}
+
+.root > p{
+  color: rgba(0, 0, 0, 0.801);
+}
+
+/* Dog slide design start */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header > h1 {
+  color: rgb(255, 0, 0);
+  box-shadow: 6px 12px 29px -20px rgba(255, 1, 1, 0.925);
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 9px;
+}
+
+.header > select {
+  font-size: 1rem;
+}
+
+.breed {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.slideshow {
+  flex: 1;
+  background-color: rgba(255, 0, 0, 0.829);
+  position: relative;
+
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+  opacity: 0;
+  transform: scale(1);
+  transition: all 0.9s ease-out;
+}
+
+.slide:nth-child(2) {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+
+#breed > select{
+  
+  font-size: 2rem;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&family=Xanh+Mono&display=swap"
+        rel="stylesheet">
+    <title>Just For Fun</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="navLogo">
+                <li><a href="#" checked>Logo</a></li>
+            </div>
+            <div class="navSection">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Products</a>
+            </li>
+            </div>
+        </ul>
+    </nav>
+    <div id="contaniner">
+        <div class="datOfBirthContainer">
+            <h1>Days Spent On Earth</h1>
+            <h3>Please enter your birth date,<br> <span>( <small style="color: black;"> To find out the numbers of days you've spent on earth...  </small> ).</span></h3>
+
+            <input type="date" id="birthDay">
+            <input type="text" id="name" placeholder="Your Name" autocomplete="off">
+            <input type="text" id="gender" placeholder="Gender">
+
+            <button onclick="diplayDate()">Submit</button>
+            <div class="root"></div>
+        </div>
+       
+        <div class="app">
+            <div class="header">
+                <hr>
+                <h1>Slide Dog App</h1>
+                <div id="breed"></div>
+            </div>
+            <div class="slideshow" id="slideshow"></div>
+        </div>
+    </div>
+    <hr>
+
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
